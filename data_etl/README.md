@@ -85,3 +85,10 @@ python data_etl.py
 
 On success:
 ETL completed successfully (1-minute OHLC).
+
+## Notes
+
+- There is no datetime data for 2024 in `sample_fx_data_A.csv.gz`.
+- Therefore, the expected date is set to **2023-12-01**.
+- You can change this value in `data_etl/data_etl.py` (line 16), for example to **2024-03-01**,  
+- to verify that the prediction date validation works correctly.
